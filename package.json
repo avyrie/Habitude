@@ -1,0 +1,26 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "Habit forming app for Boston Hackathon 2020",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avyrie/Habitude.git"
+  },
+  "author": "Allison Pittman and Kaila Moreno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avyrie/Habitude/issues"
+  },
+  "homepage": "https://github.com/avyrie/Habitude#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.13"
+  }
+}
