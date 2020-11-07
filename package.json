@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avyrie/Habitude.git"
+    "url": "git+https://github.com/avyrie/HabitudeBack.git"
   },
   "author": "Allison Pittman and Kaila Moreno",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/avyrie/Habitude/issues"
+    "url": "https://github.com/avyrie/HabitudeBack/issues"
   },
-  "homepage": "https://github.com/avyrie/Habitude#readme",
+  "homepage": "https://github.com/avyrie/HabitudeBack#readme",
   "dependencies": {
     "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
