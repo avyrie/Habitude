@@ -2,6 +2,8 @@ const router = require('express').Router();
 const ctrl = require('../controllers');
 const authRequired = require('../middleware/authReq');
 
+// Current Path = '/api/habits'
+
 // Routes
 router.get('/', ctrl.habits.index);
 router.put('/:id', authRequired, ctrl.habits.update);
