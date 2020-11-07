@@ -25,13 +25,14 @@ const signup = async (req, res) => {
     // Creates a user with a hashed password
     const newUser = await db.User.create({ ...req.body, password: hash });
     console.log(`This is newUser: `, newUser)
+    const currentUser = await db.User.findOne({email: req.body.email})
     const payload = {id: newUser._id};
     const secret = process.env.JWT_SECRET;
     const expiration = {expiresIn: "1h"};
     // Sign token
     const token = await jwt.sign(payload, secret, expiration);
     // Success
-    return res.status(201).json({status: 201, message: "success"});
+    return res.status(201).json({status: 201, message: "success", token});
   } catch (error) {
     console.log(`Sign up error: `, error);
     return res.status(500).json({
