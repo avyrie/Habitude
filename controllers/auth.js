@@ -3,7 +3,7 @@ const jwt = require('jsonwebtoken');
 const db = require('../models');
 
 const signup = async (req, res) => {
-  if (!req.body.username || !req.body.email || !req.body.password) {
+  if (!req.body.name || !req.body.email || !req.body.password) {
     return res.status(400).json({message: 'All fields are required. Please try again'});
   }
   if (req.body.password.length < 4) {
