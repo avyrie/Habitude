@@ -29,11 +29,7 @@ const show = (req, res) => {
                 error: [{ message: `Error in users show: ${err}`}]
             });
             console.log(`This is foundUser: `, foundUser)
-            return res.status(200).json({
-                status: 200,
-                data: foundUser,
-                requestedAt: new Date().toLocaleString(),
-            })
+            return res.status(200).json(foundUser)
         });
 };
 

@@ -3,12 +3,12 @@ const cors = require('cors');
 require('dotenv').config();
 const routes = require('./routes');
 const jwt = require('jsonwebtoken')
-const port = process.env.PORT || 6000;
+const port = process.env.PORT || 5000;
 const app = express();
 
 // Cors
 app.use(cors({
-origin: ['http://localhost:3000'],
+origin: [`http://localhost:3000`],
 methods: "GET,POST,PUT,DELETE",
 optionsSuccessStatus: 200 
 }));
